@@ -81,6 +81,9 @@ def db_operation(data):
         # print ("Raw data : %s" % row["raw"])
         print()
 
+    #close the connection
+    dbconnect.close();
+
 if __name__ == "__main__":
     data = get_data()
     db_operation(data)
